@@ -8,7 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-space-grotesk);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -23,4 +23,179 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  text-transform: uppercase;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+  opacity: 0.2;
+}
+
+.fancy>.letter1,
+.fancy>.letter2,
+.fancy>.letter3,
+.fancy>.letter4 {
+  display: inline-block;
+  text-transform: uppercase;
+  transition: transform 850ms cubic-bezier(0.5, 1.8, 0.3, 0.8);
+}
+
+.fancy:hover>.letter1,
+.fancy:hover>.letter2,
+.fancy:hover>.letter3,
+.fancy:hover>.letter4 {
+  transition-duration: 1600ms;
+}
+
+.fancy:hover>.letter1:nth-child(1) {
+  transform: translate3d(-0.3em, 0.6em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(15deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter1:nth-child(2) {
+  transform: translate3d(-0.3em, -0.5em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-12deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter1:nth-child(3) {
+  transform: translate3d(0em, 0.15em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(6deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter1:nth-child(4) {
+  transform: translate3d(0.05em, -0.2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(6deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter1:nth-child(5) {
+  transform: translate3d(0.15em, 0.7em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(9deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter1:nth-child(6) {
+  transform: translate3d(0.25em, -0.25em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-23deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter2:nth-child(1) {
+  transform: translate3d(-0.8em, -0.6em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-29deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter2:nth-child(2) {
+  transform: translate3d(-0.2em, -0.4em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter2:nth-child(3) {
+  transform: translate3d(-0.05em, 0.1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(12deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter2:nth-child(4) {
+  transform: translate3d(-0.05em, -0.1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-9deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter2:nth-child(5) {
+  transform: translate3d(-0.1em, 0.55em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(3deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter2:nth-child(6) {
+  transform: translate3d(0em, -0.1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(9deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter2:nth-child(7) {
+  transform: translate3d(0em, 0.15em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-12deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter2:nth-child(8) {
+  transform: translate3d(0em, 0.15em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-17deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter2:nth-child(9) {
+  transform: translate3d(0em, -0.65em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(9deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter3:nth-child(1) {
+  transform: translate3d(-0.2em, 0.4em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(12deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter3:nth-child(2) {
+  transform: translate3d(-0.2em, -0.5em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-9deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter3:nth-child(3) {
+  transform: translate3d(0em, 0.1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(6deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter3:nth-child(4) {
+  transform: translate3d(0.1em, -0.3em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(6deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter3:nth-child(5) {
+  transform: translate3d(0.15em, 0.5em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(9deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter3:nth-child(6) {
+  transform: translate3d(0.4em, -0.3em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-23deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter3:nth-child(7) {
+  transform: translate3d(0.3em, 0.25em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(12deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter4:nth-child(1) {
+  transform: translate3d(-0.4em, 0.5em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(15deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter4:nth-child(2) {
+  transform: translate3d(-0.2em, -0.3em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-12deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter4:nth-child(3) {
+  transform: translate3d(0em, 0.2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(6deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter4:nth-child(4) {
+  transform: translate3d(0.1em, -0.15em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(6deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter4:nth-child(5) {
+  transform: translate3d(0.2em, 0.6em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(9deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter4:nth-child(6) {
+  transform: translate3d(0.3em, -0.2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-23deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.fancy:hover>.letter4:nth-child(7) {
+  transform: translate3d(0.4em, 0.3em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(12deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
 }
