@@ -5,9 +5,9 @@ import { cubicBezier, motion } from "motion/react"
 
 export default function Home() {
   return (
-    <motion.div className="flex min-h-screen items-center justify-center bg-black font-sans" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5, ease: cubicBezier(0.4, 0, 0.2, 1) }}>
-      <main className="flex min-h-screen min-w-screen w-full max-w-3xl flex-col items-center justify-center py-32 px-16 bg-black text-8xl">
-        <div id="text">
+    <motion.div className="flex min-h-screen items-center justify-center font-sans" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5, ease: cubicBezier(0.4, 0, 0.2, 1) }}>
+      <main className="flex min-h-screen min-w-screen w-full max-w-3xl flex-col items-center justify-center py-32 px-16 text-8xl">
+        <div id="text" className="text-white">
           <div className="line">
             <p className="word">Oliver</p>
             <p className="word"> </p>
