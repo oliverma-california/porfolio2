@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </main>
 
-      <div className="flex min-w-screen w-full max-w-3xl flex-col items-center justify-center lg:pb-48 lg:px-16 text-4xl lg:text-8xl">
+      <div className="flex min-w-screen w-full max-w-3xl flex-col items-center justify-center pb-24 lg:pb-48 px-8 lg:px-16 text-4xl lg:text-8xl">
         <div className="flex flex-col lg:flex-row flex-wrap gap-8 mt-16 justify-center">
           {cards.map((card, index) => (
             <Card key={index} title={card.title} description={card.description} imageSrc={card.imageSrc} link={card.link} githubLink={card.githubLink} />

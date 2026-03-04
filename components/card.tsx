@@ -7,8 +7,8 @@ export default function Card({ title, description, imageSrc, link, githubLink }:
       <Image src={imageSrc} alt={title} width={400} height={200} className="w-full h-48 object-cover" />
       <div className="p-8 flex flex-col justify-between h-full ">
         <div>
-          <h2 className="text-2xl font-semibold mb-2">{title}</h2>
-          <h3 className="text-base text-neutral-400">{description}</h3>
+          <h2 className="text-xl lg:text-2xl font-semibold mb-2">{title}</h2>
+          <h3 className="text-sm lg:text-base text-neutral-400">{description}</h3>
         </div>  
         <div className="mt-8 flex justify-between">
           <a href={link} target="_blank" rel="noopener noreferrer">
