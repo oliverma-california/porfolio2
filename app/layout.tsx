@@ -19,7 +19,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Oliver Ma | Software Engineer",
-  description: "EECS student at UC Berkeley, passionate about building impactful products and solving complex problems. Experienced in full-stack development, machine learning, and competitive programming.",
+  description: "Welcome to my personal portfolio website! I am an EECS student at UC Berkeley, passionate about building impactful products and solving complex problems. Experienced in full-stack development, machine learning, and competitive programming.",
 };
 
 export default function RootLayout({
